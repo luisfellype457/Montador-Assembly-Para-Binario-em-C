@@ -1,0 +1,4 @@
+.data
+    str: .string "tun tun tun tun tun SAHUR"
+main:
+addi s0, x0, 10
