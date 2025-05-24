@@ -110,7 +110,7 @@ int get_rdnum(char* rd){
 
 //Retorna o rd em binário
 char *get_rd(char* reg_d){
-    char rd_bit[5];
+    char *rd_bit = "     ";
     int rd_num = get_rdnum(reg_d);
     printf("rd_num:  %d\n", rd_num);//(para debug, retirar dps)
     int_para_5bits(rd_num,rd_bit);
@@ -195,6 +195,6 @@ void traduzir(char* ins){
 int main(){
     //print_regs();
     /*Ler texto e transformar em binário linha por linha*/
-    char instruction[30] = "addi x10 s2 8";//= *Recebe somente 1 instrução*;
+    char instruction[30] = "addi t1 t2 8";//= *Recebe somente 1 instrução*;
     traduzir(instruction);    
 }
